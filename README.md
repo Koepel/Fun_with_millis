@@ -27,3 +27,8 @@ These are a few small demonstration sketches to show how to use millis() in diff
    to turn something on and off by pressing the same button.
  - **millis_and_finite_state_machine.ino**  
    This example sketch combines millis(), boolean variables and a finite state machine.
+
+Maybe in the future I will add a few:  
+Softly pulse a led with a brightness that is according to the human eye.  
+Measure how long something takes with millis() or micros().  
+Play a tune without delay, using millis() and a "update" function.
