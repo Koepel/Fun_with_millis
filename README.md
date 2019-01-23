@@ -19,3 +19,5 @@ These are a few small demonstration sketches to show how to use millis() in diff
  - millis_and_bool.ino  
    A boolean variable can be used to do something just once. It can also be used
    to turn something on and off by pressing the same button.
+ - millis_and_finite_state_machine.ino  
+   This example sketch combines millis(), boolean variables and a finite state machine.
