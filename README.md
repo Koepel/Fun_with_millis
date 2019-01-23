@@ -14,3 +14,5 @@ These are a few small demonstration sketches to show how to use millis() in diff
  - millis_single_delay.ino  
    A single "delay" with millis(). A software timer is started. When the time is up, the
    software timer stops itself, thus creating a single event.
+ - millis_count_down.ino  
+   Counting down with millis().
