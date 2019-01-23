@@ -32,3 +32,4 @@ Maybe in the future I will add a few:
 Softly pulse a led with a brightness that is according to the human eye.  
 Measure how long something takes with millis() or micros().  
 Play a tune without delay, using millis() and a "update" function.
+Detecting when a button is pressed for a short or longer time, or accelerate the increase of a value when a button is pressed longer.
