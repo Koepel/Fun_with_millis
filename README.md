@@ -13,7 +13,7 @@ These are a few small demonstration sketches to show how to use millis() in diff
    is "on" is different than the time the led is "off".
  - **millis_rhythm.ino**  
    Blink a led with a rhytm. The values for the time to set the led on and off
-   are stored in an array.
+   are read from an array.
  - **millis_single_delay.ino**  
    A single "delay" with millis(). A software timer is started. When the time is up, the
    software timer stops itself, thus creating a single event.
