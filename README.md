@@ -16,3 +16,6 @@ These are a few small demonstration sketches to show how to use millis() in diff
    software timer stops itself, thus creating a single event.
  - millis_count_down.ino  
    Counting down with millis().
+ - millis_and_bool.ino  
+   A boolean variable can be used to do something just once. It can also be used
+   to turn something on and off by pressing the same button.
