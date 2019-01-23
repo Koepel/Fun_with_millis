@@ -89,21 +89,31 @@ void loop()
   switch( state)
   {
     case STATE_IDLE_INIT:
+      // Before going to the actual "idle" state, a message is printed.
       Serial.println( "Press the button to turn the led on.");
       state = STATE_IDLE;
       break;
     case STATE_IDLE:
+      // This "idle" state is when there is nothing to do.
+      // This state is executed until a button is pressed.
+      // It "waits" until a button is pressed, but it does
+      // not really wait, since it is run over and over again.
       if( buttonPressed)
       {
         state = STATE_ON_INIT;
       }
       break;
     case STATE_ON_INIT:
+      // The state when the led is "on" is split into three states.
+      // This is the initial part to turn the led on and print a message.
       digitalWrite( ledPin, HIGH);
       Serial.println( "Press button longer than two seconds to turn it off.");
       state = STATE_ON_BEFORE_BUTTON;
       break;
     case STATE_ON_BEFORE_BUTTON:
+      // This state "waits" until a button is pressed.
+      // As soon as a button is pressed, the value of millis()
+      // is stored, to be able to calculate how long the button is pressed.
       if( buttonPressed)
       {
         previousMillisButton = currentMillis;
@@ -111,6 +121,8 @@ void loop()
       }
       break;
     case STATE_ON_BUTTON_2_SECONDS:
+      // When the button is released before 2 seconds are passed,
+      // then return to the state to "wait" for the button.
       if( buttonReleased)
       {
         state = STATE_ON_BEFORE_BUTTON;
@@ -135,12 +147,17 @@ void loop()
       }
       break;
     case STATE_BLINK_INIT:
+      // Set up the blinking.
+      // Updating the previousMillisBlinking is not really required.
       previousMillisBlinking = currentMillis;
       blinking = true;
       Serial.println( "Press button to stop blinking.");
       state = STATE_BLINK;
       break;
     case STATE_BLINK:
+      // This state "waits" until a button is pressed.
+      // At the moment the button is pressed, the led could be on or off.
+      // Therefor the led is turned off, to be sure that it will be off.
       if( buttonPressed)
       {
         blinking = false;
