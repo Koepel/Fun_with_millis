@@ -29,7 +29,7 @@ These are a few small demonstration sketches to show how to use millis() in diff
    This example sketch combines millis(), boolean variables and a finite state machine.
 
 Maybe in the future I will add a few:  
-Softly pulse a led with a brightness that is according to the human eye.  
+Softly pulse a led PWM and make the brightness according to the human eye.  
 Measure how long something takes with millis() or micros().  
 Play a tune without delay, using millis() and a "update" function.
 Detecting when a button is pressed for a short or longer time, or accelerate the increase of a value when a button is pressed longer.
