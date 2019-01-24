@@ -1,5 +1,5 @@
 // ---------------------------------------------
-// millis_and_finite_state_machine
+// millis_and_finite_state_machine.ino
 // ---------------------------------------------
 // License: The Unlicense, Public Domain.
 // Author: Koepel
