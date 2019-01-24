@@ -1,3 +1,11 @@
+// ---------------------------------------------
+// millis_within_millis.ino
+// ---------------------------------------------
+// License: The Unlicense, Public Domain.
+// Author: Koepel
+// 2019 januari 23
+// ---------------------------------------------
+// 
 // millis within millis
 //
 // Blink a led for some time, and keep it off for some time.
