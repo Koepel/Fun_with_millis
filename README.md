@@ -31,6 +31,8 @@ These are a few small demonstration sketches to show how to use millis() in diff
  - **millis_and_finite_state_machine.ino**  
    This example sketch combines millis(), boolean variables and a finite state machine.
 
+These examples are in the Public Domain, because they are only small and basic examples for using millis().
+
 Maybe in the future I will add a few:  
 Softly pulse a led PWM and make the brightness according to the human eye.  
 Play a tune without delay, using millis() and a "update" function.  
