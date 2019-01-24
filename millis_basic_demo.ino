@@ -1,3 +1,11 @@
+// ---------------------------------------------
+// millis_basic_demo.ino
+// ---------------------------------------------
+// License: The Unlicense, Public Domain.
+// Author: Koepel
+// 2019 januari 23
+// ---------------------------------------------
+// 
 // millis_basic_demo.ino
 //
 // Running three different things with millis().
