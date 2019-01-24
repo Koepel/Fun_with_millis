@@ -22,6 +22,9 @@ These are a few small demonstration sketches to show how to use millis() in diff
  - **millis_within_millis.ino**  
    Using millis() to blink a led, and another millis() software timer to turn on and off 
    the blinking.
+ - **millis_measure_time.ino**  
+   Use millis() and micros() to measure how long a piece of code takes. Measure for
+   example how long the function analogRead() takes in three different ways.
  - **millis_and_bool.ino**  
    A boolean variable can be used to do something just once. It can also be used
    to turn something on and off by pressing the same button.
@@ -30,6 +33,5 @@ These are a few small demonstration sketches to show how to use millis() in diff
 
 Maybe in the future I will add a few:  
 Softly pulse a led PWM and make the brightness according to the human eye.  
-Measure how long something takes with millis() or micros().  
 Play a tune without delay, using millis() and a "update" function.  
 Detecting when a button is pressed for a short or longer time, or accelerate the increase of a value when a button is pressed longer.
