@@ -1,3 +1,11 @@
+// ---------------------------------------------
+// millis_and_bool.ino
+// ---------------------------------------------
+// License: The Unlicense, Public Domain.
+// Author: Koepel
+// 2019 januari 23
+// ---------------------------------------------
+// 
 // Example of millis() and boolean variables.
 // For example to turn something on with a button, and turn it
 // of by pressing the same button.
