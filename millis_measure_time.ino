@@ -1,3 +1,11 @@
+// ---------------------------------------------
+// millis_measure_time.ino
+// ---------------------------------------------
+// License: The Unlicense, Public Domain.
+// Author: Koepel
+// 2019 januari 24
+// ---------------------------------------------
+// 
 // Use millis() and micros() to measure how long a piece of code takes.
 //
 // The Serial.flush() is used to wait until the data is transmitted,
