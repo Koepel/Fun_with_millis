@@ -1,3 +1,11 @@
+// ---------------------------------------------
+// millis_different_on_and_off_times
+// ---------------------------------------------
+// License: The Unlicense, Public Domain.
+// Author: Koepel
+// 2019 januari 23
+// ---------------------------------------------
+// 
 // millis() demo with different "on" and "off" times.
 //
 // The led of the Arduino board is used.
