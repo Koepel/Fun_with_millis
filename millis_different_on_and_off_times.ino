@@ -1,5 +1,5 @@
 // ---------------------------------------------
-// millis_different_on_and_off_times
+// millis_different_on_and_off_times.ino
 // ---------------------------------------------
 // License: The Unlicense, Public Domain.
 // Author: Koepel
