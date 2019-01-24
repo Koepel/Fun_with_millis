@@ -1,3 +1,11 @@
+// ---------------------------------------------
+// millis_and_finite_state_machine
+// ---------------------------------------------
+// License: The Unlicense, Public Domain.
+// Author: Koepel
+// 2019 januari 23
+// ---------------------------------------------
+// 
 // millis and a finite state machine
 //
 // The "State Change Detection" example is used.
