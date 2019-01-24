@@ -1,3 +1,11 @@
+// ---------------------------------------------
+// millis_rhythm.ino
+// ---------------------------------------------
+// License: The Unlicense, Public Domain.
+// Author: Koepel
+// 2019 januari 23
+// ---------------------------------------------
+// 
 // millis with a rhythm.
 //
 // Make a led blink with a specific rhythm, using millis.
