@@ -1,3 +1,11 @@
+// ---------------------------------------------
+// millis_single_delay.ino
+// ---------------------------------------------
+// License: The Unlicense, Public Domain.
+// Author: Koepel
+// 2019 januari 23
+// ---------------------------------------------
+// 
 // One shot software timer with millis().
 // Turn on a led for 4 seconds when a switch is used.
 // 
