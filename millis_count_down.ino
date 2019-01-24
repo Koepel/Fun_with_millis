@@ -1,3 +1,11 @@
+// ---------------------------------------------
+// millis_count_down.ino
+// ---------------------------------------------
+// License: The Unlicense, Public Domain.
+// Author: Koepel
+// 2019 januari 23
+// ---------------------------------------------
+// 
 // millis() demo for a count down timer.
 //
 // A button is connected to pin 2 and GND.
