@@ -36,5 +36,5 @@ These examples are in the Public Domain, because they are only small and basic e
 
 Maybe in the future I will add a few more:  
 Softly pulse a led PWM and make the brightness according to the human eye.  
-Play a tune without delay, using millis() and a "update" function.  
+Play a tune without delay, using millis() and a "update" function as an alternative for the ToneMelody example.
 Detecting when a button is pressed for a short or longer time, or accelerate the increase of a value when a button is pressed longer.
