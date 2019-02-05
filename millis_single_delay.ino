@@ -19,7 +19,6 @@
 // The LED_BUILTIN led is the led on the Arduino board,
 // any other digital pin can be used.
 //
-// Created and tested at Tinkercad.com
 
 const int switchPin = 2;
 const int ledPin = LED_BUILTIN;
