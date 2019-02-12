@@ -3,7 +3,7 @@
 // ---------------------------------------------
 // License: The Unlicense, Public Domain.
 // Author: Koepel
-// 2019 januari 24
+// 2019 january 24
 // ---------------------------------------------
 // 
 // Use millis() and micros() to measure how long a piece of code takes.
