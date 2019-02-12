@@ -23,6 +23,9 @@ I hope you like them and have fun with the sketches :smile:
 - **[millis_short_press_long_press.ino](millis_short_press_long_press.ino)**
    Press a button for a short time to turn a led on, and press the button for a long time 
    to turn the led off.
+- **[millis_short_press_long_press_extra.ino](millis_short_press_long_press_extra.ino)**
+   This sketch does exactly the same as "millis_short_press_long_press.ino" but a finite state machine
+   is used.
 - **[millis_within_millis.ino](millis_within_millis.ino)**  
    Using millis() to blink a led, and another millis() software timer to turn on and off 
    the blinking.
