@@ -20,6 +20,9 @@ I hope you like them and have fun with the sketches :smile:
    software timer stops itself, thus creating a single event.
 - **[millis_count_down.ino](millis_count_down.ino)**  
    Counting down with millis().
+- **[millis_short_press_long_press.ino](millis_short_press_long_press.ino)**
+   Press a button for a short time to turn a led on, and press the button for a long time 
+   to turn the led off.
 - **[millis_within_millis.ino](millis_within_millis.ino)**  
    Using millis() to blink a led, and another millis() software timer to turn on and off 
    the blinking.
@@ -36,5 +39,5 @@ These examples are in the Public Domain, because they are only small and basic e
 
 Maybe in the future I will add a few more:  
 Softly pulse a led PWM and make the brightness according to the human eye.  
-Play a tune without delay, using millis() and a "update" function as an alternative for the ToneMelody example.
-Detecting when a button is pressed for a short or longer time, or accelerate the increase of a value when a button is pressed longer.
+Play a tune without delay, using millis() and a "update" function as an alternative for the ToneMelody example.  
+Increase a value with acceleration when a button is kept pressed.  
