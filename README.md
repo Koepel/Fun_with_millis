@@ -25,7 +25,7 @@ I hope you like them and have fun with the sketches :smile:
    to turn the led off.
 - **[millis_short_press_long_press_extra.ino](millis_short_press_long_press_extra.ino)**  
    This sketch does exactly the same as "millis_short_press_long_press.ino" but a finite state machine
-   is used.
+   is used. The compiled code uses less memory.
 - **[millis_within_millis.ino](millis_within_millis.ino)**  
    Using millis() to blink a led, and another millis() software timer to turn on and off 
    the blinking.
