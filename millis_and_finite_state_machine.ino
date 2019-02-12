@@ -18,6 +18,11 @@
 // They are used to make a setup for the new state.
 //
 // A push button is connected between pin 2 and GND.
+//
+// I want to change this sketch:
+//   When the led is off and the button is pressed for a long time,
+//   then I want to turn the led on and after some time turn it off.
+// 
 
 
 // An 'enum' is the best way to for a list of the states.
