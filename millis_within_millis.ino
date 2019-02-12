@@ -3,7 +3,7 @@
 // ---------------------------------------------
 // License: The Unlicense, Public Domain.
 // Author: Koepel
-// 2019 januari 23
+// 2019 january 23
 // ---------------------------------------------
 // 
 // millis within millis
