@@ -35,6 +35,9 @@ I hope you like them and have fun with the sketches :smile:
 - **[millis_soft_pulsating_led.ino](millis_soft_pulsating_led.ino)**  
    A led with soft pulsating brightness. The brightness is updated with millis() with a fixed interval.  
    A led and a resistor is needed, and a PWM pin is used.
+- **[millis_led_heartbeat.ino](millis_led_heartbeat.ino)**  
+   A led that blinks softly like a heartbeat, using millis() to update the brightness.  
+   A led and a resistor is needed, and a PWM pin is used.
 - **[millis_and_bool.ino](millis_and_bool.ino)**  
    A boolean variable can be used to do something just once. It can also be used
    to turn something on and off by pressing the same button.
@@ -44,6 +47,5 @@ I hope you like them and have fun with the sketches :smile:
 These examples are in the Public Domain, because they are only small and basic examples for using millis().
 
 Maybe in the future I will add a few more:  
-Softly pulse a led PWM and make the brightness according to the human eye.  
 Play a tune without delay, using millis() and a "update" function as an alternative for the ToneMelody example.  
 Increase a value with acceleration when a button is kept pressed.  
