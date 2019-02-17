@@ -32,6 +32,9 @@ I hope you like them and have fun with the sketches :smile:
 - **[millis_measure_time.ino](millis_measure_time.ino)**  
    Use millis() and micros() to measure how long a piece of code takes. Measure for
    example how long the function analogRead() takes in three different ways.
+- **[millis_soft_pulsating_led.ino](millis_soft_pulsating_led.ino)**  
+   A led with soft pulsating brightness. The brightness is updated with millis() with a fixed interval.  
+   A led and a resistor is needed, and a PWM pin is used.
 - **[millis_and_bool.ino](millis_and_bool.ino)**  
    A boolean variable can be used to do something just once. It can also be used
    to turn something on and off by pressing the same button.
