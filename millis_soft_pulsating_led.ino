@@ -3,7 +3,10 @@
 // ---------------------------------------------
 // License: The Unlicense, Public Domain.
 // Author: Koepel
-// 2019 february 17
+// Version 1, 2019 february 17
+// Version 2, 2019 march 20
+//   The logarithmic scale was inverted.
+//   Now using pow(10,x) instead of log10(x)
 // ---------------------------------------------
 //
 // A led with soft pulsating brightness.
@@ -37,15 +40,15 @@ void loop()
 
     // The brightness to the human eye is close to a logarithmic scale with base 10.
     // A sine wave is used for the wave of the pulse.
-    // The sine wave is going through a logarithmic function to calculate the PWM value.
-    // To get 0...1 out of the log function, the sine is converted to 1...10.
+    // The sine wave is going through a exponential function with base 10.
     // A value of 0 for the analogWrite turns the led off, that is visually not nice.
     // Therefor the result for the PWM is calculated to 1...255.
 
     float s = sin( rad);                  // The sine from radians
-    float t = 5.5 + (4.5 * s);            // convert -1...1 to 1...10 for the log10
-    float u = 1.0 + (254.0 * log10( t));  // convert 1...10 to 1...255 with log scale
-    int pwm = int( u);                    // convert it to integer for the PWM value
+    float t = (0.5 * s) + 0.5;            // convert -1...1 to 0...1 for the logarithmic/exponential scale
+    float u = pow( 10, t);                // convert 0...1 to 1...10 with exponential scale with base 10
+    float v = (254.5 / 9.0 * (u - 1.0)) + 1.0; // convert 1...10 to 1...255. Add 0.5 to 254 for rounding
+    int pwm = int( v);                    // convert it to integer for the PWM value
 
     rad += rad_increment;
     if( rad >= 2.0 * M_PI)
