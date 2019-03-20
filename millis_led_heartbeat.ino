@@ -3,7 +3,9 @@
 // ---------------------------------------------
 // License: The Unlicense, Public Domain.
 // Author: Koepel
-// 2019 february 17
+// Version 1, 2019 february 17
+// Version 2, 2019 march 20
+//   A few minor changes.
 // ---------------------------------------------
 //
 // A led that blinks softly like a heartbeat.
@@ -20,9 +22,13 @@ const int ledPin = 3;              // This must be a PWM pin.
 unsigned long previousMillis;
 const unsigned long interval = 40; // update interval
 
+float x = -0.5;                    // from -0.5 to 0.5
+
+
 void setup()
 {
 }
+
 
 void loop()
 {
@@ -40,28 +46,26 @@ void loop()
     // The brightness to the human eye is close to a logarithmic scale with base 10.
     // Since an exponential curve is used, it is already a nice pulse.
 
-    static float x = 0.0;          // from 0.0 to 1.0, must be a static or a global variable
-
     const float s1 = 150.0;        // steepness first pulse
-    const float s2 = 350.0;        // steepness second pulse
+    const float s2 = 400.0;        // steepness second pulse
     const float d = 0.13;          // distance between the pulses
     const float f = 0.6;           // frequency of heartbeat in Hz
-    const float a = 200.0;         // amplitude for maximum brightness
+    const float a = 200.0;         // amplitude of brightness
 
     // Set lowest value to 1, so the led does not go completely off
     float y = 1.0;
 
     // First pulse.
-    y += a * expf( -s1 * squaref( x - (0.5 - d)));
+    y += a * expf( -s1 * squaref( x + d));
 
     // Second pulse at lower brightness.
-    y += a * expf( -s2 * squaref( x - (0.5 + d))) * 0.50;
+    y += a * expf( -s2 * squaref( x - d)) * 0.30;
 
     // The total value of y should not be above 255.
     analogWrite( ledPin, int( y));
 
     x += f * float( interval) / 1000.0;  // divide interval by 1000 because it is in milliseconds
-    if( x >= 1.0)
-      x = 0.0;
+    if( x >= 0.5)
+      x -= 1.0;
   }
 }
