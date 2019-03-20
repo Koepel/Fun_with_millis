@@ -18,7 +18,7 @@ I hope you like them and have fun with the sketches :smile:
 - **[millis_single_delay.ino](millis_single_delay.ino)**  
    A single "delay" with millis(). A software timer is started. When the time is up, the
    software timer stops itself, thus creating a single event.
-- **[millis_clock.ino](millis_clock.ino)**
+- **[millis_clock.ino](millis_clock.ino)**  
    A clock with hours, minutes and seconds. The serial monitor is used as output to show the time.
 - **[millis_count_down.ino](millis_count_down.ino)**  
    Counting down with millis().
