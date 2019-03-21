@@ -1,8 +1,7 @@
 # Fun_with_millis
-A few small Arduino examples using the millis() function.
 
 The Arduino millis() function can be used in almost every situation.
-These are a few small demonstration sketches to show how to use millis() in different situations.  
+These are small demonstration sketches to show how to use millis() in different situations.  
 I hope you like them and have fun with the sketches :smile:
 
 
