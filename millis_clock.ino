@@ -29,7 +29,7 @@ void loop()
 {
   unsigned long currentMillis = millis();
   
-  if( Serial.available())
+  if( Serial.available() > 0)
   {
     delay( 100);               // wait 100ms to get whole line
     int h, a, m, b, s;
@@ -48,6 +48,11 @@ void loop()
     else
     {
       Serial.println( "New time not accepted");
+    }
+    // Clear remaining characters from the serial input buffer.
+    while( Serial.available() > 0)
+    {
+      Serial.read();
     }
   }
 
