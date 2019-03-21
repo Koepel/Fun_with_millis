@@ -46,7 +46,7 @@ void loop()
   t2 = millis();           // get millis() again
   result = t2 - t1;        // calcuate the difference
 
-  Serial.print( f, 6);     // print the calculated value of pi as well
+  Serial.print( f, 7);     // print the calculated value of pi as well
   Serial.print( ",  ");
   Serial.print( result);
   Serial.print( ",  ");
@@ -112,7 +112,7 @@ void loop()
   delay( 100);
 }
 
-
+// Madhava-Leibniz formula.
 float calcPi()
 {
   float x = 4.0;
@@ -126,3 +126,33 @@ float calcPi()
 
   return( pi);
 }
+
+// Nilakantha formula.
+// float calcPi()
+// {
+//   float pi = 3.0;
+//   float s = 1.0;
+// 
+//   for( unsigned long t = 2; t < 200; t += 2)
+//   {
+//     pi += s * 4.0 / float(t * (t+1) * (t+2));
+//     s = -s;
+//   }
+// 
+//   return( pi);
+// }
+
+// Francois Viete formula
+// float calcPi()
+// {
+//   float s = 0.0;
+//   float t = 1.0;
+// 
+//   for( int i = 0; i < 12; i++)
+//   {
+//     s = sqrt( s + 2.0);
+//     t *= s / 2.0;
+//   }
+// 
+//   return( 2.0 / t);
+// }
