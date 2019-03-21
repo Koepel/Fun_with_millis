@@ -45,6 +45,8 @@ I hope you like them and have fun with the sketches :smile:
    to turn something on and off by pressing the same button.
 - **[millis_and_finite_state_machine.ino](millis_and_finite_state_machine.ino)**  
    This example sketch combines millis(), boolean variables and a finite state machine.
+- **[millis_reaction_timer.ino](millis_reaction_timer.ino)**  
+   Measure how fast your reaction time is. Using millis and a finite state machine.
 - **[millis_overdone.ino](millis_overdone.ino)**  
    This sketch runs 400 millis timers at the same time on a Arduino Uno, and 7000 millis timers 
    on a Arduino Zero or MKR board.
