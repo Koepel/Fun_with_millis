@@ -48,11 +48,15 @@ void setup()
   // Use the noise from the analog inputs,
   // to create a different random sequence each
   // time the Arduino is started.
+  // The randomSeed() function takes a 32 bit unsigned long parameter.
+  // By shifting each value from analogRead() some to the left, 
+  // the analog values are spread over the 32-bits, 
+  // for (in theory) a little more random.
   unsigned long noise = 0;
   for( int i = A0; i <= A5; i++)
   {
     noise += analogRead( i);
-    noise <<= 4;               // for a little more random
+    noise <<= 3;               // for a little more random
   }
   randomSeed( noise);
 }
