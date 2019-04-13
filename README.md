@@ -49,6 +49,9 @@ I hope you like them and have fun with the sketches :smile:
    or without a carriage return or linefeed.
 - **[millis_reaction_timer.ino](millis_reaction_timer.ino)**  
    Measure how fast your reaction time is. Using millis and a finite state machine.
+- **[millis_timestamp_events.ino](millis_timestamp_events.ino)**  
+   Copy events from a button to a led with a delay of two seconds. 
+   This example shows how to timestamp events with millis().
 - **[millis_overdone.ino](millis_overdone.ino)**  
    This sketch runs 400 millis timers at the same time on a Arduino Uno, and 7000 millis timers 
    on a Arduino Zero or MKR board.
