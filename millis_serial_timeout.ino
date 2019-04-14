@@ -50,7 +50,7 @@ void loop()
     }
     else
     {
-      buffer[index] = (uint8_t) inChar;  // put new data in the buffer
+      buffer[index] = (char) inChar;  // put new data in the buffer
       if( index < (sizeof( buffer) - 1))
       {
         index++;
@@ -106,6 +106,6 @@ void loop()
 
     // clear the buffer
     index = 0;
-    buffer[index] = '\0';
+    buffer[0] = '\0';
   }
 }
