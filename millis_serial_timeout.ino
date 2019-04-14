@@ -51,7 +51,7 @@ void loop()
     else
     {
       buffer[index] = (char) inChar;  // put new data in the buffer
-      if( index < (sizeof( buffer) - 1))
+      if( index < (int)(sizeof( buffer) - 1))  // the 'sizeof' returns an unsigned size_t
       {
         index++;
       }
