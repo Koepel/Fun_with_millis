@@ -39,7 +39,7 @@ I hope you like them and have fun with the sketches :smile:
 - **[millis_led_heartbeat.ino](millis_led_heartbeat.ino)**  
    A led that blinks softly like a heartbeat, using millis() to update the brightness.  
    A led and a resistor is needed, and a PWM pin is used.
-- **[micros_software_PWM.ino]**(micros_software_PWM.ino)  
+- **[micros_software_PWM.ino](micros_software_PWM.ino)**  
    Instead of millis(), the micros() function is used to create a software PWM signal.
    The brightness of a led (on any pin) can be set by entering a value in the serial monitor.
 - **[millis_and_bool.ino](millis_and_bool.ino)**  
