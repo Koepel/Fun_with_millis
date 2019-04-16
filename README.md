@@ -39,6 +39,9 @@ I hope you like them and have fun with the sketches :smile:
 - **[millis_led_heartbeat.ino](millis_led_heartbeat.ino)**  
    A led that blinks softly like a heartbeat, using millis() to update the brightness.  
    A led and a resistor is needed, and a PWM pin is used.
+- **[micros_software_PWM.ino]**(micros_software_PWM.ino)  
+   Instead of millis(), the micros() function is used to create a software PWM signal.
+   The brightness of a led (on any pin) can be set by entering a value in the serial monitor.
 - **[millis_and_bool.ino](millis_and_bool.ino)**  
    A boolean variable can be used to do something just once. It can also be used
    to turn something on and off by pressing the same button.
@@ -61,4 +64,4 @@ These examples are in the Public Domain, because they are only small and basic e
 Maybe in the future I will add a few more:  
 Play a tune without delay, using millis() and a "update" function as an alternative for the ToneMelody example.  
 Increase a value with acceleration when a button is kept pressed.  
-Run a millis timers with priority, run some always and others when there is still time.  
+Run millis timers with priority, run some always and others when there is still time.  
