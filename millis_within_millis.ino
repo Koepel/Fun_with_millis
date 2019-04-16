@@ -17,11 +17,13 @@
 // Since the blinking can be turned off at any moment,
 // the led is turned off when the blinking stops.
 //
+// The LED_BUILTIN is the led on the Arduino board,
+// any other digital pin can be used.
 
 unsigned long previousMillisOnOff;
 unsigned long previousMillisBlink;
 
-const int ledPin = 13;
+const int ledPin = LED_BUILTIN; // The digital pin to which a led is connected.
 
 bool state_OnOff = false;
 bool state_Blink = false;
