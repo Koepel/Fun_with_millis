@@ -20,10 +20,10 @@
 // The LED_BUILTIN is the led on the Arduino board,
 // any other digital pin can be used.
 
+const int ledPin = LED_BUILTIN;       // The digital pin to which a led is connected.
+
 unsigned long previousMillisEnableBlink; // for turning on and off the blinking
 unsigned long previousMillisBlink;    // for the blinking of the led
-
-const int ledPin = LED_BUILTIN;       // The digital pin to which a led is connected.
 
 // The state for the led is the variable 'blink'.
 // That could be an integer that is HIGH or LOW, but I choose to use a bool
