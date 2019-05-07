@@ -30,6 +30,10 @@ I hope you like them and have fun with the sketches :smile:
 - **[millis_within_millis.ino](millis_within_millis.ino)**  
    Using millis() to blink a led, and another millis() software timer to turn on and off 
    the blinking.
+- **[millis_within_millis_extra.ino](millis_within_millis_extra.ino)**  
+   The same as "millis_within_millis.ino", but with extra specific working.
+   The led does not turn off immediately, but it turns off at the end of its "on" time.
+   That is done by using a extra (buffered) boolean variable.
 - **[millis_measure_time.ino](millis_measure_time.ino)**  
    Use millis() and micros() to measure how long a piece of code takes. Measure for
    example how long the function analogRead() takes in three different ways.
