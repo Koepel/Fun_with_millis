@@ -25,6 +25,9 @@ unsigned long previousMillisBlink;
 
 const int ledPin = LED_BUILTIN; // The digital pin to which a led is connected.
 
+// The state for the led is the 'state_Blink'.
+// That could be an integer that is HIGH or LOW, but I choose to use a bool
+// with true and false. There is no reason for that, both are good.
 bool state_OnOff = false;
 bool state_Blink = false;
 
@@ -50,6 +53,9 @@ void loop()
     }
   }
   
+  // Sometimes the part that does the blinking
+  // is placed in a "update" function.
+  // I prefer that as well, it keeps the loop() small and clean.
   if( state_OnOff)
   {
     if( currentMillis - previousMillisBlink >= 150)
