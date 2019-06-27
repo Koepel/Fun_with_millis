@@ -40,7 +40,7 @@ typedef struct idSequence_STRUCT
   char sequence[MAX_SEQUENCE];
 } idSequence;
 
-// For the Arduino Uno this list of 333 bytes could be placed in PROGMEM.
+// For the Arduino Uno this list of 378 bytes could be placed in PROGMEM.
 const idSequence list[] =
 {
    0, "L",          // long press (between 190ms and 900ms)
