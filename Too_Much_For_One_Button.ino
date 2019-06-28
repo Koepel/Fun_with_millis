@@ -9,6 +9,8 @@
 // Selecting more than 40 different commands with a single button.
 // That is just too much for one button, and it is hard to use.
 // The first 12 button sequences are reasonably doable with some practice.
+// Single click, double click, triple click, long click, they are all part
+// of the more than 40 different button sequences.
 //
 // The sketch might not be very educational.
 // It is not just a simple example.
