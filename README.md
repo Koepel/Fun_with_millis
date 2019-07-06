@@ -60,8 +60,8 @@ I hope you like them and have fun with the sketches :smile:
    Copy events from a button to a led with a delay of two seconds. 
    This example shows how to timestamp events with millis().
 - **[millis_overdone.ino](millis_overdone.ino)**  
-   This sketch runs 400 millis timers at the same time on a Arduino Uno, and 7000 millis timers 
-   on a Arduino Zero or MKR board.
+   This sketch runs 400 millis timers at the same time on a Arduino Uno, or 7000 millis timers 
+   on a Arduino Zero or MKR board, or 27000 on a ESP32 board.
 - **[Too_Much_For_One_Button.ino](Too_Much_For_One_Button.ino)**  
    Use a single button to select more than 40 different commands.
 
