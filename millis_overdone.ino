@@ -3,7 +3,9 @@
 // ---------------------------------------------
 // License: The Unlicense, Public Domain.
 // Author: Koepel
-// 2019 march 21
+// Version 1, 2019 march 21
+// Version 2, 2019 july 6
+//    Added ESP32
 // ---------------------------------------------
 // 
 // Using millis() is fun, but to overdo it can be even more fun.
@@ -32,14 +34,27 @@
 // The accuracy is about 4 milliseconds, because testing 7000 timers takes
 // some time.
 //
+// ESP32
+// -----
+// Running at 240MHz with about 320kbyte SRAM available in Arduino-compatible mode.
+// When using the 16 lowest bits of millis, 
+// then 27000 millis timers can run at the same time.
+// The accuracy is about 2 milliseconds, that is the time it takes
+// to test 27000 timers.
 
 
-#if defined __AVR__
-#define NUMBER_TIMERS 400               // 400 millis timers for 16MHz AVR microcontrollers.
-#define SERIAL_PORT Serial             // Use Serial for Arduino Uno or SerialUSB for Leonardo.
+#if defined(ARDUINO_ARCH_AVR)
+ #define NUMBER_TIMERS 400              // 400 millis timers for 16MHz AVR microcontrollers.
+ #define SERIAL_PORT Serial             // Use Serial for Arduino Uno or SerialUSB for Leonardo.
+#elif defined(ARDUINO_ARCH_SAMD)       
+ #define NUMBER_TIMERS 7000             // 7000 millis timers for Arduino Zero, MKR.
+ #define SERIAL_PORT SerialUSB          // Use Serial1 or SerialUSB (native) for Arduino Zero and MKR.
+#elif defined(ARDUINO_ARCH_ESP32)
+ #define NUMBER_TIMERS 27000            // 27000 millis timers for ESP32.
+ #define SERIAL_PORT Serial             // Use Serial for ESP32.
 #else
-#define NUMBER_TIMERS 7000              // 7000 millis timers for other boards.
-#define SERIAL_PORT SerialUSB          // Use Serial1 or SerialUSB (native) for Arduino Zero and MKR.
+ #define NUMBER_TIMERS 400              // default, unknown board
+ #define SERIAL_PORT Serial             // default, unknown board
 #endif
 
 
@@ -52,6 +67,7 @@ const unsigned long interval = 1000;
 unsigned long count;
 
 const int ledPin = LED_BUILTIN;         // The digital pin to which a led is connected.
+
 
 void setup()
 {
@@ -68,17 +84,18 @@ void setup()
 
   // Fill the values of the interval with random values between 5 ms and 30 seconds.
   // The interval can not be near 64 seconds, because only the lowest 16 bits of millis are used.
-  for( int i=0; i < NUMBER_TIMERS; i++)
+  for( unsigned int i=0; i < NUMBER_TIMERS; i++)
   {
     intervalOverdone[i] = random( 5, 30000);
   }
 }
 
+
 void loop()
 {
   unsigned long currentMillis = millis();
 
-  for( int i=0; i < NUMBER_TIMERS; i++)
+  for( unsigned int i=0; i < NUMBER_TIMERS; i++)
   {
     // The subtraction is done with two 16-bit integers.
     // The result of that is cast once more to uint16_t, 
