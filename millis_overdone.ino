@@ -10,8 +10,9 @@
 // 
 // Using millis() is fun, but to overdo it can be even more fun.
 //
-// This sketch runs 400 millis timers at the same time on a Arduino Uno,
-// and 7000 millis timers on a Arduino Zero or MKR board.
+// This sketch runs 400 millis timers at the same time on a Arduino Uno board.
+// A Arduino Zero or MKR board can run 7000 millis timers at the same time.
+// An ESP32 board can run 27000 millis timers at the same time.
 // All millis timers are used to toggle the system led.
 //
 // When only short times are used, it is allowed to use the
