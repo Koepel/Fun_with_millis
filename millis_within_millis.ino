@@ -10,7 +10,8 @@
 //
 // Blink a led for some time, and keep it off for some time.
 //
-// Because millis is timing based, it deals with events.
+// Because millis is timing based, I prefer a sketch that is "event driven".
+// Certain events can become active, and the sketch processes them.
 // Therefor the second millis timer is not inside the first
 // one, but a bool variable is used to pass on information.
 //
