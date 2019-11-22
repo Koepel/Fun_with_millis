@@ -8,6 +8,9 @@
 // 
 // millis and a finite state machine
 //
+// This sketch uses a button and is going through a few different states.
+// The serial monitor tells what to do.
+//
 // The "State Change Detection" example is used.
 // The "Blink without Delay" example is used.
 // Variables of the "bool" type are used to pass on information.
