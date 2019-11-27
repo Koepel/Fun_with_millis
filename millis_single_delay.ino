@@ -6,7 +6,7 @@
 // 2019 january 23
 // ---------------------------------------------
 // 
-// One shot software timer with millis().
+// Single shot software timer with millis().
 // Turn on a led for 4 seconds when a switch is used.
 // 
 // The 4 seconds starts when the switch is released.
