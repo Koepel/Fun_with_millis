@@ -15,7 +15,8 @@ I hope you like them and have fun with the sketches :smile:
    Blink a led with a rhytm. The values for the time to set the led on and off
    are read from an array.
 - **[millis_single_delay.ino](millis_single_delay.ino)**  
-   A single "delay" with millis(). A software timer is started. When the time is up, the
+   A single "delay" with millis(). A better name is "a single shot timer".
+   A software timer is started. When the time is up, the
    software timer stops itself, thus creating a single event.
 - **[millis_clock.ino](millis_clock.ino)**  
    A clock with hours, minutes and seconds. The serial monitor is used as output to show the time.
