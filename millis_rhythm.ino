@@ -49,7 +49,7 @@ void loop()
   {
     previousMillis = currentMillis;
     
-    if( index % 2 == 0)  // check if millis is an even number
+    if( index % 2 == 0)  // check if the index is an even number
     {
       digitalWrite( ledPin, LOW);
     }
