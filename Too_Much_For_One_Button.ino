@@ -29,6 +29,11 @@
 //           being pressed to be able to make a beep sound with a piezo.
 //     '\0'  A pause longer than 900ms is the end of a sequence.
 //
+//
+// A normal library that is useful is this one:
+//   https://github.com/fasteddy516/ButtonEvents
+//   (it uses the Bounce2 library for debouncing).
+//
 
 
 #define MAX_SEQUENCE 8
