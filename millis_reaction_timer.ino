@@ -3,7 +3,13 @@
 // ---------------------------------------------
 // License: The Unlicense, Public Domain.
 // Author: Koepel
-// 2019 march 21
+//
+// 2019 march 21, Version 1
+// 2020 november 17, Version 2
+//   Changed the last analog pin from A5 to A7, 
+//   since even the Arduino Uno is able to select 
+//   those pins, even if they are not available 
+//   externally.
 // ---------------------------------------------
 // 
 // millis() example for a reaction timer.
@@ -53,7 +59,7 @@ void setup()
   // the analog values are spread over the 32-bits, 
   // for (in theory) a little more random.
   unsigned long noise = 0;
-  for( int i = A0; i <= A5; i++)
+  for( int i = A0; i <= A7; i++)  // select the analog pins that your board supports
   {
     noise += analogRead( i);
     noise <<= 3;               // for a little more random
