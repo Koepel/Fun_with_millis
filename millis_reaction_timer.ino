@@ -62,7 +62,7 @@ void setup()
   for( int i = A0; i <= A7; i++)  // select the analog pins that your board supports
   {
     noise += analogRead( i);
-    noise <<= 3;               // for a little more random
+    noise <<= 2;               // for a little more random
   }
   randomSeed( noise);
 }
