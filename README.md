@@ -69,6 +69,6 @@ I hope you like them and have fun with the sketches :smile:
 These examples are in the Public Domain, because they are only small and basic examples for using millis().
 
 Maybe in the future I will add a few more:  
-Play a tune without delay, using millis() and a "update" function as an alternative for the ToneMelody example. That might already exist: https://github.com/nathanRamaNoodles/Noodle-Synth and https://github.com/end2endzone/NonBlockingRTTTL  
+Play a tune without delay, using millis() and a "update" function as an alternative for the ToneMelody example. That might already exist: https://github.com/nathanRamaNoodles/Noodle-Synth , https://github.com/end2endzone/NonBlockingRTTTL and https://github.com/ArduinoGetStarted/buzzer .  
 Increase a value with acceleration when a button is kept pressed.  
 Run millis timers with priority, run some always and others when there is still time.  
