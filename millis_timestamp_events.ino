@@ -6,7 +6,7 @@
 // 2019 april 13, Version 1
 // 2021 may 23, Version 2
 //   Added a small delay of 2ms at the end of the loop(),
-//   because button-bouching could fill the queue
+//   because button-bounching could fill the queue
 //   with a single press on the button.
 // ---------------------------------------------
 // 
