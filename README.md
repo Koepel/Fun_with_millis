@@ -64,22 +64,28 @@ I hope you like them and have fun with the sketches :smile:
 - **[millis_and_bool.ino](millis_and_bool.ino)**  
    A boolean variable can be used to do something just once. It can also be used
    to turn something on and off by pressing the same button.
+   [_Try this sketch with Wokwi_](https://wokwi.com/arduino/projects/299403812759667209).
 - **[millis_and_finite_state_machine.ino](millis_and_finite_state_machine.ino)**  
    This example sketch combines millis(), boolean variables and a finite state machine.
+   [_Try this sketch with Wokwi_](https://wokwi.com/arduino/projects/299404107986240008).
 - **[millis_serial_timeout.ino](millis_serial_timeout.ino)**  
    Use millis as a timeout when receiving serial data to make it possible that data is received with 
    or without a carriage return or linefeed.
+   [_Try this sketch with Wokwi_](https://wokwi.com/arduino/projects/299404294615990792).
 - **[millis_reaction_timer.ino](millis_reaction_timer.ino)**  
    Measure how fast your reaction time is. Using millis and a finite state machine.
+   [_Try this sketch with Wokwi_](https://wokwi.com/arduino/projects/299404519827046925).
 - **[millis_timestamp_events.ino](millis_timestamp_events.ino)**  
    Copy events from a button to a led with a delay of two seconds. 
    This example shows how to timestamp events with millis().
+   [_Try this sketch with Wokwi_](https://wokwi.com/arduino/projects/299404945791123978).
 - **[millis_overdone.ino](millis_overdone.ino)**  
    This sketch runs 400 millis timers at the same time on a Arduino Uno, or 7000 millis timers 
    on a Arduino Zero or MKR board, or 27000 on a ESP32 board.
    [_Try this sketch with Wokwi_](https://wokwi.com/arduino/projects/299335909706301961).
 - **[Too_Much_For_One_Button.ino](Too_Much_For_One_Button.ino)**  
    Use a single button to select more than 40 different commands.
+   [_Try this sketch with Wokwi_](https://wokwi.com/arduino/projects/299405944396186122).
 
 These examples are in the Public Domain, because they are only small and basic examples for using millis().
 
