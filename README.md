@@ -4,7 +4,7 @@ The Arduino millis() function can be used in almost every situation.
 These are small demonstration sketches to show how to use millis() in different situations.  
 I hope you like them and have fun with the sketches :smile:
 
-These sketches can be simulated with ![image](Wokwi_logo.svg) Wokwi.
+These sketches can be simulated with [![image](Wokwi_logo.svg)](https://wokwi.com/) [Wokwi](https://wokwi.com/).
 
 - **[millis_basic_demo.ino](millis_basic_demo.ino)**  
    This is the basic example. It uses the serial monitor and no extra hardware is required.
