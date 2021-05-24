@@ -4,12 +4,12 @@ The Arduino millis() function can be used in almost every situation.
 These are small demonstration sketches to show how to use millis() in different situations.  
 I hope you like them and have fun with the sketches :smile:
 
-These sketches can be simulated with [![image](Wokwi_logo.svg)](https://wokwi.com/) [Wokwi](https://wokwi.com/).
+These sketches can be simulated with [<img src="Wokwi_logo.svg" alt="Wokwi" height="20"> Wokwi](https://wokwi.com/).
 
 - **[millis_basic_demo.ino](millis_basic_demo.ino)**  
    This is the basic example. It uses the serial monitor and no extra hardware is required.
    Three different software timers with millis are used to send something to the serial monitor.
-   [_Simulate this in Wokwi_](https://wokwi.com/arduino/projects/299332603637400077).
+   [<img src="Wokwi_logo.svg" alt="Wokwi" height="20"> _Simulate this in Wokwi_](https://wokwi.com/arduino/projects/299332603637400077).
 - **[millis_different_on_and_off_times.ino](millis_different_on_and_off_times.ino)**  
    An example to change the interval. No extra hardware is required. The time that a led
    is "on" is different than the time the led is "off".
