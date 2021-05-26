@@ -56,9 +56,8 @@ These sketches can be simulated with [<img src="Wokwi_logo.svg" alt="Wokwi" heig
 - **[millis_serial_timeout.ino](millis_serial_timeout.ino)** &nbsp;&nbsp;&nbsp;&nbsp; [![Wokwi badge](Wokwi_badge.svg)](https://wokwi.com/arduino/projects/299404294615990792)  
    Use millis as a timeout when receiving serial data to make it possible that data is received with 
    or without a carriage return or linefeed.
-- **[millis_reaction_timer.ino](millis_reaction_timer.ino)** &nbsp;&nbsp;&nbsp;&nbsp; [![Wokwi badge](Wokwi_badge.svg)]()  
+- **[millis_reaction_timer.ino](millis_reaction_timer.ino)** &nbsp;&nbsp;&nbsp;&nbsp; [![Wokwi badge](Wokwi_badge.svg)](https://wokwi.com/arduino/projects/299404519827046925)  
    Measure how fast your reaction time is. Using millis and a finite state machine.
-   [<img src="Wokwi_logo.svg" alt="Wokwi" height="20"> _Simulate this in Wokwi_](https://wokwi.com/arduino/projects/299404519827046925).
 - **[millis_timestamp_events.ino](millis_timestamp_events.ino)** &nbsp;&nbsp;&nbsp;&nbsp; [![Wokwi badge](Wokwi_badge.svg)](https://wokwi.com/arduino/projects/299404945791123978)  
    Copy events from a button to a led with a delay of two seconds. 
    This example shows how to timestamp events with millis().
