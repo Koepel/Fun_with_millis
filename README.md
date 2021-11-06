@@ -82,7 +82,7 @@ These sketches can be simulated with [<img src="Wokwi_logo.svg" alt="Wokwi" heig
    to turn something on and off by pressing the same button.  
    
 - **[millis_and_finite_state_machine.ino](millis_and_finite_state_machine.ino)**  
-   [![Wokwi badge](Wokwi_badge.svg)](https://wokwi.com/arduino/projects/299404107986240008)  
+   [![Wokwi badge](Wokwi_badge.svg)](https://wokwi.com/arduino/projects/314526434594914882)  
    This example sketch combines millis(), boolean variables and a finite state machine.  
    
 - **[millis_serial_timeout.ino](millis_serial_timeout.ino)**  
